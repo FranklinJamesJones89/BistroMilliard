@@ -1,0 +1,7 @@
+/* Navbar */
+
+.app__navbar {
+	width: 100%;
+	display: flex;
+	border: 2px solid black;
+} 
