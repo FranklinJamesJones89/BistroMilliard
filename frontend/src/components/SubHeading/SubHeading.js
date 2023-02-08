@@ -1,8 +1,10 @@
-const SubHeading = () => {
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+const SubHeading = ({ title }) => {
 	return (
-		<div style={{ marginBottom: '1rem' }}>
-			<p className='p__cormorant'>TITLE</p>
-			<i class="fa-thin fa-bowl-spoon"></i>
+		<div style={{ marginTop: '10rem' }}>
+			<p className='p__cormorant'>{ title }</p>
+			<i className="fa-solid fa-spoon spoon__img"></i>
 		</div>
 	)
 };
