@@ -1,3 +1,86 @@
+* {
+	font-family: 'Aboreto';	
+}
+
+/* Navbar */
 .navbar {
 	background-color: black;
+}
+
+.navbar-brand {
+	color: gold;
+	letter-spacing: .25em;
+}
+
+.nav-item a {
+	font-family: 'Amita';
+}
+
+.navbar-toggler {
+	background-color: white;
+}
+
+.navbar-toggler-icon {
+	color: grey;
+}
+
+/* carousel */
+.main-img {
+	height: 50vw;
+}
+
+.carousel-text {
+	text-align: center;
+}
+
+/* greeting-section */
+.greeting-sub-container{
+	position:absolute;
+	z-index: 10;
+	background-color: black;
+	margin-top: -35%;
+	margin-left: 5%;
+	margin-right: 5%;
+	text-align: center;
+	color: white;
+	opacity: .75;
+	animation: greeting-sub-container 3s;
+}
+
+@keyframes greeting-sub-container {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 0;
+    }
+  }
+
+.greeting-sub-container h2 {
+	font-size: 3vw;
+}
+.greeting-container{
+	position:absolute;
+	z-index: 10;
+	background-color: black;
+	margin-top: -30%;
+	margin-left: 5%;
+	margin-right: 5%;
+	text-align: center;
+	color: white;
+	opacity: .75;
+	animation: greeting-container 3s;
+}
+
+@keyframes greeting-container {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 0;
+    }
+  }
+
+.greeting-container h1 {
+	font-size: 4vw;
 }
