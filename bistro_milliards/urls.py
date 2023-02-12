@@ -7,5 +7,7 @@ from . import views
 app_name = 'bistro_milliards'
 urlpatterns = [
     # Home page
-    path('', views.index, name='index')
+    path('', views.index, name='index'),
+    # Dinner menu
+    path('dinnermenu', views.dinnermenu, name='dinnermenu')
 ]

@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-lg navbar-dark" style='font-size: 1.75vw;'>
+<nav class="navbar navbar-expand-lg navbar-dark" style='font-size: 1.5vw;'>
   <div class="container-fluid">
-    <a class="navbar-brand" style='color: gold;font-size: 2vw;' href="#">Bistro Milliard</a>
+		<a class="navbar-brand" style='color: gold;font-size: 2vw;' href="{% url 'bistro_milliards:index'%}">Bistro Milliard</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -11,10 +11,9 @@
             Menu
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+						<li><a class="dropdown-item" href="{% url 'bistro_milliards:dinnermenu' %}">Dinner Menu</a></li>
+            <li><a class="dropdown-item" href="#">Alcohol Menu</a></li>
+            <li><a class="dropdown-item" href="#">Dessert Menu</a></li>
           </ul>
         </li>
         <li class="nav-item">

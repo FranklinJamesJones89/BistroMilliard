@@ -1,0 +1,154 @@
+{% extends 'bistro_milliards/base.html' %}
+{% load static %}
+{% load bootstrap5 %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bistro Milliard: Dinner Menu</title>
+
+<!-- css -->
+<link rel='stylesheet' href="{% static 'bistro_milliards/css/styles.css'%}">
+
+<!-- bootstrap -->
+{% bootstrap_css %}
+
+<!-- google fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Amita&family=La+Belle+Aurore&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <!-- Carousel -->
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+    <img src="{% static 'bistro_milliards/img/millispread11.webp'%}" class="main-img d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+    <img src="{% static 'bistro_milliards/img/millitapas2.webp' %}" class="main-img d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+    <img src="{% static 'bistro_milliards/img/millivitellosolo.webp' %}" class="main-img d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+  </div>
+
+  <!-- Greeting -->
+  <div class='greeting-container'>
+    <h1>Dinner Menu</h1>
+  </div>
+
+  <div class='dinner-greeting'>
+    <h1>Dinner</h1>
+    <p>    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <hr class='line'/>
+  </div>
+  
+  <div class='dinner-item-header'>
+    <h1>Tapas</h1>
+  </div>
+
+  <div class='dinner-container'>
+    <div class='dinner-menu'>
+     <div class='dinner-menu-group'>
+       <div class=dinner-menu-item>
+	  <div class='dinner-menu-item-text'>
+           <h3 class='dinner-menu-item-heading'>
+	     <span class='dinner-menu-item-name'>Charcuterie</span>
+	     <span class='dinner-menu-item-price'>$18</span>
+	   </h3>
+	   <p>Prosciutto di Parma, Mortadella, Salame Calabrese</p>
+	  </div>
+       </div>
+       <div class=dinner-menu-item>
+	  <div class='dinner-menu-item-text'>
+           <h3 class='dinner-menu-item-heading'>
+	     <span class='dinner-menu-item-name'>Warm Cerignola Olives</span>
+	     <span class='dinner-menu-item-price'>$8</span>
+	   </h3>
+	   <p>Citrus, herbs, olive oil, tarragon vinegar</p>
+	  </div>
+       </div>
+       <div class=dinner-menu-item>
+	  <div class='dinner-menu-item-text'>
+           <h3 class='dinner-menu-item-heading'>
+	     <span class='dinner-menu-item-name'>Gorgonzoloa Dates (4)</span>
+	     <span class='dinner-menu-item-price'>$14</span>
+	   </h3>
+	   <p>Gorgonzola stuffed dates, prosciutto, radicchio, demi glace</p>
+	  </div>
+       </div>
+       <div class=dinner-menu-item>
+	  <div class='dinner-menu-item-text'>
+           <h3 class='dinner-menu-item-heading'>
+	     <span class='dinner-menu-item-name'>Sweet and Spicy Pea Salad</span>
+	     <span class='dinner-menu-item-price'>$14</span>
+	   </h3>
+	   <p>Sauted local snap peas, wild fruitings oyster mushrooms, sausage, stonecipher farm green garlic and kale, anise-liqour</p>
+	  </div>
+       </div>
+       <div class=dinner-menu-item>
+	  <div class='dinner-menu-item-text'>
+           <h3 class='dinner-menu-item-heading'>
+	     <span class='dinner-menu-item-name'>Mussels Provencale</span>
+	     <span class='dinner-menu-item-price'>$16</span>
+	   </h3>
+	   <p>Wild Maine mussels, pino grigio, olive oil, duxelles, garlic, parsley</p>
+	  </div>
+       </div>
+       <div class=dinner-menu-item>
+	  <div class='dinner-menu-item-text'>
+           <h3 class='dinner-menu-item-heading'>
+	     <span class='dinner-menu-item-name'>Bistro Salad</span>
+	     <span class='dinner-menu-item-price'>$12</span>
+	   </h3>
+	   <p>Stonecipher farm little gem lettuce, gorgonzola dressing, foccacia crouton, fried pancetta</p>
+	  </div>
+       </div>
+       <div class=dinner-menu-item>
+	  <div class='dinner-menu-item-text'>
+           <h3 class='dinner-menu-item-heading'>
+	     <span class='dinner-menu-item-name'>Ceci in Zimino</span>
+	     <span class='dinner-menu-item-price'>$12</span>
+	   </h3>
+	   <p>Braised organic chickpeas, Stonecipher farm swiss chard, light tomato broth and Sicilian olive oil</p>
+	  </div>
+       </div>
+
+       <div class='dinner-item-header'>
+         <h1>Pastas</h1>
+       </div>
+       
+       <div class=dinner-menu-item>
+	  <div class='dinner-menu-item-text'>
+           <h3 class='dinner-menu-item-heading'>
+	     <span class='dinner-menu-item-name'>Orecciette con Funghi e Zafferano</span>
+	     <span class='dinner-menu-item-price'>$24</span>
+	   </h3>
+	   <p>Little ear pasta with wild fruiting oyster mushrooms, saffron butter, onion confit, pecorino, parsley</p>
+	  </div>
+       </div>
+
+     </div>
+    </div>
+  </div>
+</body>
+
+<script src="{% static 'bistro_milliards/js/index.js'%}"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/3ff46289c8.js" crossorigin="anonymous"></script>
+</html>
+
+{% endblock content %}
