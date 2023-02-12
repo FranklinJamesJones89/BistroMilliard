@@ -8,3 +8,11 @@ def index(request):
 def dinnermenu(request):
     return render(request, 'bistro_milliards/dinnermenu.html')
 
+def dessertmenu(request):
+    return render(request, 'bistro_milliards/dessertmenu.html')
+
+def contact(request):
+    return render(request, 'bistro_milliards/contact.html')
+
+def about(request):
+    return render(request, 'bistro_milliards/about.html')

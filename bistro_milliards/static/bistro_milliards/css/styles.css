@@ -58,7 +58,7 @@
   }
 
 .greeting-sub-container h3 {
-	font-size: 2vw;
+	font-size: 20px;
 	font-family: 'Aboreto';
 }
 .greeting-container{
@@ -84,7 +84,7 @@
   }
 
 .greeting-container h1 {
-	font-size: 4vw;
+	font-size: 30px;
 	font-family: 'Aboreto';
 }
 
@@ -100,7 +100,7 @@
 
 .hours-container p {
 	text-align: center;
-	font-size: 1.5vw;
+	font-size: 15px;
 	padding: 15px;
 	font-weight: bold;
 	font-family: 'Aboreto';
@@ -117,7 +117,7 @@
 
 .hours-sub-container p {
 	text-align: center;
-	font-size: 1vw;
+	font-size: 10px;
 	font-family: 'Aboreto';
 	padding: 10px;
 	font-weight: bold;
@@ -142,21 +142,35 @@
 
 /* footer */
 .footer-container {
+	margin-top: 10%;
 	background-color: black;
 	width: 100%;
-	border-radius: 12px;
 }
 
 .footer-header {
+	margin-top: 5%;
 	font-family: 'Aboreto';
-	color: white;
+	color: gold;
+	font-size: 25px
 }
 
-.footer-header-bistro {
-	font-size: 3vw;
-	color: gold;
-	font-family: 'Aboreto';
+.footer-paragraph {
+	font-size: 16px;
+	color: white;
+	font-family: 'Amita';
+	text-decoration: none;
 }
+
+.footer-hours {
+	color: white;
+	font-family: 'Amita';
+}
+
+.footer-items {
+	text-decoration: none;
+	list-style: none;
+}
+
 
 .date {
 	color: white;
@@ -190,7 +204,7 @@ hr {
 
 .dinner-greeting p {
 	margin-top: 3%;
-	color: grey;
+	color: black;
 	font-family: 'Amita';
 }
 
@@ -239,7 +253,7 @@ hr {
 
 .dinner-menu-item-text p {
 	font-family: 'Amita';
-	color: grey;
+	color: black;
 }
 
 .dinner-menu-item-heading {
@@ -256,4 +270,26 @@ hr {
 	.dinner-menu-group {
 		grid-template-columns: repeat(1, 1fr);
 	}
+}
+
+/* About page */
+.about-page-container {
+	margin-top: 5%;
+	text-align: center;
+}
+
+
+.about-page-container h1 {
+	font-family: 'Aboreto';
+	margin-bottom: 3%;
+	text-decoration: underline;
+}
+
+.about-page-container p {
+	font-family: 'Amita';
+	text-align: justify;
+	margin-left: 10%;
+	margin-right: 10%;
+	color: black;
+	
 }
