@@ -1,1 +1,1 @@
-web: gunicorn bistro_milliard.wsgi --log-file-
+web: gunicorn bistro_milliard.wsgi --log-file -
